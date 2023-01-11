@@ -7,62 +7,86 @@
     android:background="#55736B"
     tools:context=".LogIn">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="343dp"
         android:layout_height="310dp"
         android:background="@drawable/log2"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.824">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="88dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="170dp"
+            android:layout_marginBottom="30dp"
+            android:text="Registrasi"
+            android:textSize="18sp"
+            android:layout_marginStart="35dp"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
         <EditText
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="269dp"
             android:layout_height="35dp"
+            android:layout_marginBottom="40dp"
             android:background="@drawable/nme1"
             android:ems="10"
-            android:hint="    NIS"
+            android:hint="NIS"
+            android:layout_gravity="center"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="145dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
 
         <EditText
             android:id="@+id/editTextTextPersonName3"
             android:layout_width="269dp"
             android:layout_height="35dp"
+            android:layout_marginBottom="30dp"
+            android:autofillHints=""
             android:background="@drawable/nme1"
             android:ems="10"
-            android:hint="    Nama"
+            android:hint="Nama"
+            android:layout_gravity="center"
             android:inputType="textPersonName"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="84dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="123dp"
             android:layout_height="49dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="masuk"
             android:text="MASUK"
-            tools:layout_editor_absoluteX="114dp"
-            tools:layout_editor_absoluteY="230dp" />
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="88dp"
-            android:layout_height="29dp"
-            android:text="Registrasi"
-            android:textSize="18sp"
-            tools:layout_editor_absoluteX="44dp"
-            tools:layout_editor_absoluteY="30dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="206dp"
         android:layout_height="156dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/group_33"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="83dp" />
+        android:contentDescription="@string/todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

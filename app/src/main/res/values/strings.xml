@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">PresensiSiswa</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="isi_absensimu_disini">Isi Absensimu Disini!</string>
+    <string name="hari_tanggal">Hari/Tanggal</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="beri_keteranganmu_hari_ini">Beri keteranganmu hari ini!</string>
+    <string name="nis">NIS</string>
+    <string name="nama">Nama</string>
+    <string name="namaLogin">Nama</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="todo">TODO</string>
+    <string name="nisLog">NIS</string>
 </resources>
