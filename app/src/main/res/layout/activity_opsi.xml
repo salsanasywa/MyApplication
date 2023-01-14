@@ -13,6 +13,7 @@
         android:layout_height="120dp"
         android:layout_marginBottom="50dp"
         app:cardCornerRadius="40dp"
+        android:onClick="history"
         app:layout_constraintBottom_toTopOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -36,7 +37,7 @@
             android:textColor="#CC000000"
             android:layout_marginTop="40dp"
             android:layout_margin="40dp"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
@@ -46,6 +47,7 @@
         android:layout_height="120dp"
         android:layout_marginBottom="80dp"
         app:cardCornerRadius="40dp"
+        android:onClick="catatan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -69,7 +71,7 @@
             android:textColor="#CC000000"
             android:layout_marginTop="40dp"
             android:layout_margin="40dp"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
@@ -79,6 +81,7 @@
         android:layout_height="120dp"
         android:layout_marginBottom="50dp"
         app:cardCornerRadius="40dp"
+        android:onClick="absensi"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -102,7 +105,7 @@
             android:textColor="#CC000000"
             android:layout_marginTop="40dp"
             android:layout_margin="40dp"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
