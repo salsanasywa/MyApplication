@@ -6,14 +6,14 @@ import androidx.room.*
 interface NoteDao {
 
     @Insert
-    fun addNote(note: Note)
+    suspend fun addNote(note: Note)
 
     @Update
-    fun addUpdate(note: Note)
+    suspend fun addUpdate(note: Note)
 
     @Delete
-    fun deleteNote(note: Note)
+    suspend fun deleteNote(note: Note)
 
     @Query ("SELECT * FROM note")
-    fun getNote():List<Note>
+    suspend fun getNote():List<Note>
 }
