@@ -6,14 +6,16 @@
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/drawable/absensi.xml" value="0.119" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/drawable/log2.xml" value="0.119" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/drawable/nme1.xml" value="0.119" />
+        <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activiti_edit.xml" value="0.20416666666666666" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activity_absensi.xml" value="0.22" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activity_catatan.xml" value="0.25" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activity_edit.xml" value="0.19010416666666666" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activity_edit_catatan.xml" value="0.20416666666666666" />
-        <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activity_history.xml" value="0.1" />
+        <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activity_history.xml" value="0.22" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activity_log_in.xml" value="0.25" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/activity_opsi.xml" value="0.22" />
+        <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/adapter_note.xml" value="0.203125" />
         <entry key="..\:/Uma Hayu/MyApp/app/src/main/res/layout/list.xml" value="0.22" />
       </map>
     </option>
