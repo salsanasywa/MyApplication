@@ -30,7 +30,7 @@ class NoteAdapter (private val notes: ArrayList<Note>, private val listener: OnA
 
     class NoteViewHolder (val view: View): RecyclerView.ViewHolder(view)
 
-    fun setData(list: String) {
+    fun setData(list: List<Note>) {
         notes.clear()
         notes.addAll(list)
         notifyDataSetChanged()

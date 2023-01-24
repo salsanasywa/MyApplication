@@ -115,10 +115,11 @@
             android:id="@+id/button2"
             android:layout_width="131dp"
             android:layout_height="45dp"
+            android:onClick="simpan"
+            android:layout_gravity="center"
             android:layout_marginBottom="30dp"
             android:background="@drawable/nme1"
             android:text="simpan"
-            android:layout_gravity="center"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

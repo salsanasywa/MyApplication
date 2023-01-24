@@ -31,9 +31,9 @@ class Catatan : AppCompatActivity() {
         super.onStart()
         CoroutineScope(Dispatchers.IO).launch {
             val notes = db.noteDao().getNotes()
-                Log.d ("Catatan", "dbResponse: $notes")
+                Log.d("Catatan", "dbResponse: $notes")
                 withContext(Dispatchers.Main){
-                    noteAdapter.setData( notes )
+                    noteAdapter.setData(notes)
                 }
         }
     }
