@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.zubet.myapplication.R
 import kotlinx.android.synthetic.main.adapter_note.view.*
-import java.util.RandomAccess
 
 class NoteAdapter (private val notes: ArrayList<Note>, private val listener: OnAdapterListener)
     : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {

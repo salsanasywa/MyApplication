@@ -34,6 +34,7 @@ class EditActivity : AppCompatActivity() {
             }
             Constant.TYPE_READ -> {
                 button_save.visibility = View.GONE
+                getNote()
             }
         }
     }
@@ -46,6 +47,15 @@ class EditActivity : AppCompatActivity() {
                 )
             finish()
             }
+        }
+    }
+
+    fun getNote(){
+        noteId = intent.getIntExtra("intent_id",0)
+        CoroutineScope(Dispatchers.IO).launch {
+            val notes = db.noteDao().getNote(noteId)[0]
+            edit_title.setText(notes.title)
+            edit_note.setText(notes.note)
         }
     }
 }

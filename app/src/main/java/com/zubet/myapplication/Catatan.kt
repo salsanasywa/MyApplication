@@ -4,16 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.zubet.myapplication.room.Constant
 import com.zubet.myapplication.room.Note
 import com.zubet.myapplication.room.NoteAdapter
 import com.zubet.myapplication.room.NoteDB
 import kotlinx.android.synthetic.main.activity_catatan.*
 import kotlinx.coroutines.*
-import androidx.recyclerview.widget.RecyclerView.LayoutManager as RecyclerViewLayoutManager
 
 class Catatan : AppCompatActivity() {
 
