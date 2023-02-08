@@ -7,73 +7,16 @@
     android:background="#55736B"
     tools:context=".Opsi">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginBottom="50dp"
-        app:cardCornerRadius="40dp"
-        android:onClick="history"
-        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="206dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageButton
-            android:id="@+id/imgList"
-            android:layout_width="350dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@drawable/absensi"
-            app:srcCompat="@drawable/listhistory_removebg_preview"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
-            tools:layout_editor_absoluteX="64dp"
-            tools:layout_editor_absoluteY="269dp" />
-
-        <TextView
-            android:id="@+id/txtlist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="List History"
-            android:textColor="#CC000000"
-            android:layout_marginTop="40dp"
-            android:layout_margin="40dp"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginBottom="80dp"
-        app:cardCornerRadius="40dp"
-        android:onClick="catatan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageButton
-            android:id="@+id/imgCatatan"
-            android:layout_width="350dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@drawable/absensi"
-            app:srcCompat="@drawable/catatan_removebg_preview"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
-            tools:layout_editor_absoluteX="64dp"
-            tools:layout_editor_absoluteY="269dp" />
-
-        <TextView
-            android:id="@+id/txtcatatan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Catatan"
-            android:textColor="#CC000000"
-            android:layout_marginTop="40dp"
-            android:layout_margin="40dp"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_33"
+        android:contentDescription="@string/todo" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
@@ -108,5 +51,41 @@
             android:textSize="25dp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:onClick="history"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="512dp">
+
+        <ImageButton
+            android:id="@+id/imgList"
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@drawable/absensi"
+            app:srcCompat="@drawable/listhistory_removebg_preview"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="497dp" />
+
+        <TextView
+            android:id="@+id/txtlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:layout_marginTop="40dp"
+            android:text="List History"
+            android:textColor="#CC000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

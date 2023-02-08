@@ -16,11 +16,6 @@ class Opsi : AppCompatActivity() {
     }
 
     fun history (view: View){
-        val pindah = Intent (this, history::class.java)
-        startActivity(pindah)
-    }
-
-    fun catatan (view: View){
         val pindah = Intent (this, Catatan::class.java)
         startActivity(pindah)
     }

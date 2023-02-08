@@ -43,7 +43,7 @@
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/txt_name"
             android:layout_width="291dp"
             android:layout_height="40dp"
             android:layout_marginBottom="15dp"
@@ -57,7 +57,7 @@
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/txt_nis"
             android:layout_width="291dp"
             android:layout_height="40dp"
             android:layout_marginBottom="15dp"
@@ -71,7 +71,7 @@
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/txt_hari"
             android:layout_width="291dp"
             android:layout_height="40dp"
             android:layout_marginBottom="20dp"
@@ -98,7 +98,7 @@
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName7"
+            android:id="@+id/txt_ket"
             android:layout_width="289dp"
             android:layout_height="56dp"
             android:layout_marginBottom="20dp"
@@ -112,7 +112,7 @@
             android:autofillHints="" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_simpan"
             android:layout_width="131dp"
             android:layout_height="45dp"
             android:onClick="simpan"

@@ -9,6 +9,7 @@ import com.zubet.myapplication.room.Constant
 import com.zubet.myapplication.room.Note
 import com.zubet.myapplication.room.NoteAdapter
 import com.zubet.myapplication.room.NoteDB
+import kotlinx.android.synthetic.main.activity_absensi.*
 import kotlinx.android.synthetic.main.activity_catatan.*
 import kotlinx.coroutines.*
 
@@ -28,22 +29,22 @@ class Catatan : AppCompatActivity() {
         super.onStart()
         CoroutineScope(Dispatchers.IO).launch {
             val notes = db.noteDao().getNotes()
-                Log.d("Catatan", "dbResponse: $notes")
-                withContext(Dispatchers.Main){
-                    noteAdapter.setData(notes)
-                }
+            Log.d("Catatan", "dbResponse: $notes")
+            withContext(Dispatchers.Main){
+                noteAdapter.setData(notes)
+            }
         }
     }
 
     fun setupListener() {
-        button_create.setOnClickListener {
+        btn_simpan.setOnClickListener {
             intentEdit(0, Constant.TYPE_CREATE)
         }
     }
 
     fun intentEdit(noteId: Int, intentType : Int){
         startActivity(
-            Intent(applicationContext, EditActivity::class.java)
+            Intent(applicationContext, Catatan::class.java)
                 .putExtra("intent_id", noteId)
                 .putExtra("intent_type", intentType)
         )
@@ -55,7 +56,7 @@ class Catatan : AppCompatActivity() {
                 intentEdit(note.id , Constant.TYPE_READ)
             }
         })
-            list_note.apply {
+        list_note.apply {
             layoutManager = LinearLayoutManager(applicationContext)
             adapter = noteAdapter
         }

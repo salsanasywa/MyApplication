@@ -20,8 +20,8 @@ class NoteAdapter (private val notes: ArrayList<Note>, private val listener: OnA
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         val note = notes[position]
-        holder.view.text_title.text = note.title
-        holder.view.text_title.setOnClickListener{
+        holder.view.edit_hari.text = note.hari
+        holder.view.edit_hari.setOnClickListener{
             listener.onClick(note)
 
         }
