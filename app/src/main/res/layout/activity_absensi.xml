@@ -122,4 +122,5 @@
             android:text="simpan"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

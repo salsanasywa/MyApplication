@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zubet.myapplication.room.Constant
 import com.zubet.myapplication.room.Note
@@ -53,7 +54,7 @@ class Catatan : AppCompatActivity() {
     private fun setupRecyclerView(){
         noteAdapter = NoteAdapter(arrayListOf(), object  : NoteAdapter.OnAdapterListener{
             override fun onClick(note: Note) {
-                intentEdit(note.id , Constant.TYPE_READ)
+                Toast.makeText(applicationContext, note.hari, Toast.LENGTH_SHORT).show()
             }
         })
         list_note.apply {

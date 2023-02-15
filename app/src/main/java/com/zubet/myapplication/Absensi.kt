@@ -1,6 +1,5 @@
 package com.zubet.myapplication
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,10 +24,6 @@ class Absensi : AppCompatActivity() {
         setupListener()
         noteId = intent.getIntExtra("intent_id",0)
         Toast.makeText(this, noteId.toString(), Toast.LENGTH_SHORT).show()
-    }
-    fun simpan (view: View){
-        val pindah = Intent (this, Opsi::class.java)
-        startActivity(pindah)
     }
 
     fun setupView(){

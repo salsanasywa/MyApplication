@@ -23,11 +23,12 @@
         android:layout_width="300dp"
         android:layout_height="120dp"
         android:layout_marginBottom="50dp"
-        app:cardCornerRadius="40dp"
         android:onClick="absensi"
+        app:cardCornerRadius="40dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck">
 
         <ImageButton
             android:id="@+id/imgAbsen"
@@ -44,10 +45,10 @@
             android:id="@+id/txtabsen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:layout_marginTop="40dp"
             android:text="Absensi"
             android:textColor="#CC000000"
-            android:layout_marginTop="40dp"
-            android:layout_margin="40dp"
             android:textSize="25dp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
@@ -61,6 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck"
         tools:layout_editor_absoluteY="512dp">
 
         <ImageButton
@@ -85,7 +87,5 @@
             android:textSize="25dp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
