@@ -16,8 +16,8 @@ import kotlinx.coroutines.*
 
 class Catatan : AppCompatActivity() {
 
-    val db by lazy { NoteDB(this) }
-    lateinit var noteAdapter: NoteAdapter
+    private val db by lazy { NoteDB(this) }
+    private lateinit var noteAdapter: NoteAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,13 +37,13 @@ class Catatan : AppCompatActivity() {
         }
     }
 
-    fun setupListener() {
+    private fun setupListener() {
         btn_simpan.setOnClickListener {
             intentEdit(0, Constant.TYPE_CREATE)
         }
     }
 
-    fun intentEdit(noteId: Int, intentType : Int){
+    private fun intentEdit(noteId: Int, intentType : Int){
         startActivity(
             Intent(applicationContext, Catatan::class.java)
                 .putExtra("intent_id", noteId)

@@ -26,9 +26,8 @@ class Absensi : AppCompatActivity() {
         Toast.makeText(this, noteId.toString(), Toast.LENGTH_SHORT).show()
     }
 
-    fun setupView(){
-        val intentType = intent.getIntExtra("intent_type", 0)
-        when (intentType) {
+    private fun setupView(){
+        when (intent.getIntExtra("intent_type", 0)) {
             Constant.TYPE_CREATE -> {
 
             }
@@ -39,18 +38,23 @@ class Absensi : AppCompatActivity() {
         }
     }
 
-    fun setupListener(){
+    private fun setupListener(){
         btn_simpan.setOnClickListener {
             CoroutineScope(Dispatchers.IO).launch {
                 db.noteDao().addNote(
-                    Note(0, txt_name.text.toString(), txt_nis.text.toString(), txt_hari.text.toString(), txt_ket.text.toString())
+                    Note(0,
+                        name = txt_name.text.toString(),
+                        nis = txt_nis.text.toString().toInt(),
+                        hari = txt_hari.text.toString(),
+                        keterangan = txt_ket.text.toString(),
+                    )
                 )
-                finish()
             }
+            finish()
         }
     }
 
-    fun getNote(){
+    private fun getNote(){
         noteId = intent.getIntExtra("intent_id",0)
         CoroutineScope(Dispatchers.IO).launch {
             val notes = db.noteDao().getNote(noteId)[0]

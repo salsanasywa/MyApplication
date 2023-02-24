@@ -22,8 +22,8 @@ class NoteAdapter (private val notes: ArrayList<Note>, private val listener: OnA
         val note = notes[position]
         holder.view.edit_hari.text = note.hari
         holder.view.edit_nama.text = note.name
-        holder.view.edit_nis.text = note.nis
         holder.view.edit_ket.text = note.keterangan
+        holder.view.edit_nis.text = note.nis.toString()
         holder.view.edit_hari.setOnClickListener {
             listener.onClick(note)
         }
