@@ -1,5 +1,6 @@
 package com.zubet.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -50,7 +51,8 @@ class Absensi : AppCompatActivity() {
                     )
                 )
             }
-            finish()
+            val simpan = Intent (this,Opsi::class.java)
+            startActivity(simpan)
         }
     }
 
